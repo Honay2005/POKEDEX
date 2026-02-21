@@ -1,6 +1,6 @@
 let allPokemons = [];
 const pokemonContainer = document.querySelector("#pokeContainer");
-const pokemonCount = 151;
+const pokemonCount = 1320; // Total de pokémons na API (ajustado para incluir os mais recentes)
 
 const colors = {
     fire: '#FDDFDF',
