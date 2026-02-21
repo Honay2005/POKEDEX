@@ -19,14 +19,6 @@ h1 {
     letter-spacing: 5px;
 }
 
-.pokemonContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   margin: 0 auto;
-   max-width: 1200px;
-}
-
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +30,7 @@ h1 {
     max-width: 1200px;
 }
 
-.Pokemon {
+.pokemon{
     background-color: #e5ffb5;
     border-radius: 10px;
     box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
@@ -52,7 +44,7 @@ h1 {
     align-items: center;
 }
 
-.imgContainer {
+.img-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,4 +71,54 @@ h1 {
 .name {
    margin: 15px 7px;
    letter-spacing: 1.5px;
+}
+
+.search {
+    width: 300px;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.type-filters {
+    margin-bottom: 20px;
+}
+
+.type-filters button {
+    margin: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.type-filters button:hover {
+    transform: scale(1.1);
+}
+
+.no-results {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.pokemon {
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+mark {
+    background-color: yellow;
+    padding: 2px;
+    border-radius: 5px;
 }
